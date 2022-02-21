@@ -1,0 +1,508 @@
+/*Preliminaries*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rokkitt', serif;
+    color: #002539;
+}
+
+h1 {
+    font-size: 35px;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 800;
+}
+
+h3 {
+    font-size: 23px;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 19px;
+    font-weight: 500;
+}
+
+P {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    font-family: 'Corben';
+}
+
+
+
+
+/*Navigation*/
+nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    height: 50px;
+    margin: 30px 0 0 8vw;
+}
+
+nav .line {
+    width: 2px;
+    height: 40px;
+    background: #002539;
+    border-radius: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+nav ul li {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 0;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    transition: .3s ease-out;
+}
+
+nav ul li a:hover {
+    color: #FF5520;
+}
+
+nav img {
+    height: 45px;
+}
+
+
+
+
+/*Header*/
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-graphic {
+    width: 43vw;
+    transition: .3s ease-out;
+}
+
+.header-msg {
+    width: 450px;
+    margin: 190px 0 0 8vw;
+}
+
+.btn {
+    position: relative;
+    width: 162px;
+    height: 40px;
+    margin-top: 30px;
+}
+
+.main-btn {
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: none;
+    outline: none;
+    color: #ffffff;
+    background: #FF5520;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    width: 150px;
+    height: 35px;
+    cursor: pointer;
+    transition: .2s ease-in;
+}
+
+.btn-border {
+    position: absolute;
+    top: 0;
+    width: 162px;
+    height: 37px;
+    border-radius: 4px;
+    border: 2px solid #002539;
+    transition: .3s ease-out;
+    transition-delay: .1s;
+}
+
+.btn:hover .main-btn {
+    background: #002539;
+}
+
+.btn:hover .btn-border {
+    border: 2px solid #FF5520;
+}
+
+
+
+
+/*Social Media Links*/
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 60vw;
+    margin: 150px auto 0 auto;
+}
+
+.social-links .line {
+    width: 92%;
+    height: 2px;
+    margin: auto;
+    background: #FF5520;
+}
+
+.social-links .links {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.social-links img {
+    height: 30px;
+}
+
+
+
+
+/*Services Section*/
+.services {
+    margin: 100px auto 0 8vw;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 475px;
+    margin-bottom: 60px;
+}
+
+.services-title {
+    text-align: center;
+}
+
+.services .services-ctn {
+    display: flex;
+    gap: 45px;
+    padding-left: 7px;
+}
+
+.services .service {
+    position: relative;
+    width: 180px;
+    height: 100px;
+    background: #002539;
+    border-radius: 7px;
+}
+
+.services .service::before {
+    content: '';
+    position: absolute;
+    top: -7px;
+    left: -7px;
+    width: 95px;
+    height: 20px;
+    border-top-left-radius: 5px;
+    border-top: 2px solid #FF5520;
+    border-left: 2px solid #FF5520;
+    transition: .3s ease-in;
+}
+
+.services .service:hover::before {
+    width: 175px;
+}
+
+.services .service-two::before {
+    top: unset;
+    bottom: -7px;
+    left: -7px;
+    border-top-left-radius: unset;
+    border-bottom-left-radius: 5px;
+    border-top: unset;
+    border-left: 2px solid #FF5520;
+    border-bottom: 2px solid #FF5520;
+}
+
+.services .service-three::before {
+    top: unset;
+    left: unset;
+    bottom: -7px;
+    right: -7px;
+    border-top-left-radius: unset;
+    border-bottom-right-radius: 5px;
+    border-top: unset;
+    border-left: unset;
+    border-bottom: 2px solid #FF5520;
+    border-right: 2px solid #FF5520;
+}
+
+.services .service-four::before {
+    top: -7px;
+    right: -7px;
+    left: unset;
+    border-top-left-radius: unset;
+    border-top-right-radius: 5px;
+    border-left: unset;
+    border-right: 2px solid #FF5520;
+}
+
+.services .service p {
+    position: absolute;
+    bottom: 7px;
+    right: 12px;
+    text-align: right;
+    line-height: 25px;
+    font-size: 15px;
+    color: #ffffff;
+}
+
+
+
+
+/*Works Section*/
+.works {
+    margin: 250px 8vw 0 8vw;
+}
+
+.works-ctn {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.works-title {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.work {
+    width: 670px;
+}
+
+.work:nth-of-type(2n) {
+    align-self: flex-end;
+}
+
+.work .work-imgs {
+    position: relative;
+    width: 100%;
+    height: 475px;
+    background: #002539;
+    border-radius: 7px;
+}
+
+.work .work-imgs::before {
+    content: 'Click to Explore';
+    display: grid;
+    place-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+    font-weight: 700;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 10;
+    border-radius: 7px;
+    opacity: 0;
+    transition: .3s ease-in;
+}
+
+.work .work-imgs:hover::before {
+    opacity: 1;
+}
+
+.work .work-imgs .short-view {
+    position: absolute;
+    bottom: 0;
+    left: 25px;
+    width: 350px;
+}
+
+.work .work-imgs .long-view {
+    position: absolute;
+    bottom: 0;
+    right: 25px;
+    height: 100%;
+}
+
+.work.special .work-imgs .short-view {
+    position: absolute;
+    bottom: 0;
+    left: 25px;
+    width: 300px;
+}
+
+.work.special .work-imgs .long-view {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    height: calc(100% - 25px);
+}
+
+.work .work-text {
+    margin-top: 25px;
+}
+
+.work:nth-of-type(2n) .work-text {
+    text-align: right;
+}
+
+
+
+
+/*Designer Section*/
+.designer {
+    margin: 250px 8vw 0 8vw;
+}
+
+.designer-title {
+    text-align: center;
+}
+
+.designer-ctn {
+    display: grid;
+    gap: 20%;
+    grid-template-columns: 1fr 2fr;
+}
+
+.designer .profile  {
+    width: 100%;
+    padding: 10px 10px 0 10px;
+}
+
+.designer .profile-img {
+    position: relative;
+    display: block;
+    width: calc(100%);
+    height: 450px;
+    background-image: url(profile.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 7px;
+}
+
+.designer .profile-img::before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    width: 95px;
+    height: 200px;
+    border-bottom-right-radius: 5px;
+    border-bottom: 2px solid #FF5520;
+    border-right: 2px solid #FF5520;
+    transition: .3s ease-out;
+}
+
+.designer .profile-img::after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 95px;
+    height: 200px;
+    border-top-left-radius: 5px;
+    border-top: 2px solid #FF5520;
+    border-left: 2px solid #FF5520;
+    transition: .3s ease-out;
+}
+
+.designer .profile-img:hover::before {
+    bottom: -10px;
+    right: -10px;
+    width: 35px;
+    height: 300px;
+}
+
+.designer .profile-img:hover::after {
+    top: -10px;
+    left: -10px;
+    width: 35px;
+    height: 300px;
+}
+
+.designer .profile .profile-text {
+    text-align: center;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.designer .right  {
+    width: 100%;
+    padding-top: 5px;
+}
+
+.designer .designer-text {
+    text-align: justify;
+}
+
+.designer .designer-text p {
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.designer .hobbies {
+    margin-top: 75px;
+}
+
+.designer .hobbies h3 {
+    font-weight: 800;
+}
+
+.designer .hobbies .hobbies-ctn {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 400px;
+    margin-top: 35px;
+}
+
+.designer .hobbies .hobbies-ctn .hobby {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.designer .hobbies .hobbies-ctn .hobby img {
+    width: 25px;
+}
+
+@media only screen and (max-width: 1100px) {
+    .designer-ctn {
+        gap: 10%;
+    }
+
+    .designer .profile-img {
+        height: 350px;
+    }
+}
+
+
+
+
+/*Skills Section*/
+.skills {
+    margin: 250px 8vw 0 8vw;
+}
+
+.skills-title {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}

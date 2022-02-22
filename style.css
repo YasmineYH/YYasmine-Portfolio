@@ -126,7 +126,12 @@ nav img {
     nav .line {
         display: none;
     }
-    
+}
+
+@media only screen and (max-width: 500px) {
+    nav {
+        margin: 15px 8vw 0 8vw;
+    }
 }
 
 
@@ -217,6 +222,12 @@ header {
     .header-msg .btn {
         margin: auto;
         margin-top: 30px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .header-msg {
+        width: 84vw;
     }
 }
 
@@ -347,6 +358,11 @@ header {
 }
 
 @media only screen and (max-width: 1025px) {
+    .services-title {
+        margin: auto;
+        margin-bottom: 60px;
+    }
+
     .services .services-ctn {
         gap: 35px;
     }
@@ -365,7 +381,7 @@ header {
 
 @media only screen and (max-width: 900px) {
     .services {
-        margin: 125px 8vw 0 8vw;
+        margin: 145px 8vw 0 8vw;
     }
 
     .services .services-ctn {
@@ -536,7 +552,7 @@ header {
 
 @media only screen and (max-width: 900px) {
     .works {
-        margin: 125px 8vw 0 8vw;
+        margin: 145px 8vw 0 8vw;
     }
     
     .work {
@@ -710,6 +726,18 @@ header {
 
     .designer .profile-img {
         height: 350px;
+    }
+}
+
+@media only screen and (max-width: 900px)  {
+    .designer {
+        margin: 145px 8vw 0 8vw;
+    }
+    
+    .designer-title {
+        text-align: center;
+        margin: auto;
+        margin-bottom: 60px;
     }
 }
 

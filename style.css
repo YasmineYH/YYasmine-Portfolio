@@ -399,16 +399,20 @@ header {
     
     .services .service {
         position: relative;
-        width: 39vw;
+        width: 38vw;
         height: 100px;
         background: #002539;
         border-radius: 7px;
     }
 
     .services .service::before {
-        width: 95px;
+        width: 85px;
         height: 20px;
         border-top: 2px solid #FF5520;
+    }
+
+    .services .service:hover::before {
+        width: 95%;
     }
     
     .services .service-two::before {

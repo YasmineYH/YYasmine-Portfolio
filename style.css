@@ -7,6 +7,15 @@
     color: #002539;
 }
 
+body {
+    border: 2px solid red;
+}
+
+section {
+    padding: 0 8vw;
+    border: 1px solid red;
+}
+
 h1 {
     font-size: 35px;
     font-weight: 800;
@@ -27,7 +36,7 @@ h4 {
     font-weight: 500;
 }
 
-P {
+p {
     font-size: 16px;
     font-weight: 400;
     line-height: 25px;
@@ -267,7 +276,7 @@ header {
 
 /*Services Section*/
 .services {
-    margin: 100px auto 0 8vw;
+    margin-top: 100px;
 }
 
 .title {
@@ -381,7 +390,7 @@ header {
 
 @media only screen and (max-width: 900px) {
     .services {
-        margin: 145px 8vw 0 8vw;
+        margin-top: 145px;
     }
 
     .services .services-ctn {
@@ -389,13 +398,13 @@ header {
         justify-content: space-between;
         grid-template-columns: auto auto;
         grid-template-rows: 1fr  1fr;
-        gap: 45px;
+        gap: 4vw;
         padding: 7px;
     }
     
     .services .service {
         position: relative;
-        width: 40vw;
+        width: 39vw;
         height: 100px;
         background: #002539;
         border-radius: 7px;
@@ -452,7 +461,7 @@ header {
         display: flex;
         flex-direction: column;
         gap: 5px;
-        width: 90vw;
+        width: 84vw;
         margin-bottom: 60px;
     }
 }
@@ -462,7 +471,7 @@ header {
 
 /*Works Section*/
 .works {
-    margin: 250px 8vw 0 8vw;
+    margin-top: 250px;
 }
 
 .works-ctn {
@@ -552,11 +561,11 @@ header {
 
 @media only screen and (max-width: 900px) {
     .works {
-        margin: 145px 8vw 0 8vw;
+        margin-top: 145px;
     }
     
     .work {
-        width: 80vw;
+        width: 84vw;
         align-self: center;
     }
     
@@ -603,7 +612,7 @@ header {
 
 /*Designer Section*/
 .designer {
-    margin: 250px 8vw 0 8vw;
+    margin-top: 250px;
 }
 
 .designer-title {
@@ -731,7 +740,7 @@ header {
 
 @media only screen and (max-width: 900px)  {
     .designer {
-        margin: 145px 8vw 0 8vw;
+        margin-top: 145px;
     }
     
     .designer-title {
@@ -760,7 +769,7 @@ header {
 
 /*Skills Section*/
 .skills {
-    margin: 250px 8vw 0 8vw;
+    margin-top: 250px;
 }
 
 .skills-title {

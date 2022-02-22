@@ -34,6 +34,12 @@ P {
     font-family: 'Corben';
 }
 
+@media only screen and (max-width: 1000px) {
+    h1 {
+        font-size: 30px;
+    }
+}
+
 
 
 
@@ -82,6 +88,47 @@ nav img {
     height: 45px;
 }
 
+.hamburger {
+    display: none;
+}
+
+@media only screen and (max-width: 1010px) {
+    nav ul {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .hamburger .hamburger-line {
+        height: 2px;
+        width: 27px;
+        background: #002539;
+    }
+
+    .hamburger .hamburger-line:nth-of-type(1),
+    .hamburger .hamburger-line:nth-of-type(3) {
+        width: 20px;
+        margin-left: auto;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    nav {
+        gap: unset;
+        justify-content: space-between;
+        margin: 30px 8vw 0 8vw;
+    }
+
+    nav .line {
+        display: none;
+    }
+    
+}
+
 
 
 
@@ -101,7 +148,7 @@ header {
     margin: 190px 0 0 8vw;
 }
 
-.btn {
+.header-msg .btn {
     position: relative;
     width: 162px;
     height: 40px;
@@ -144,6 +191,36 @@ header {
 .btn:hover .btn-border {
     border: 2px solid #FF5520;
 }
+
+@media only screen and (max-width: 1000px) {
+    .header-msg {
+        width: 400px;
+        margin: 150px 0 0 8vw;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    header {
+        display: block;
+    }
+
+    .header-graphic {
+        display: none;
+    }
+
+    .header-msg {
+        width: 420px;
+        margin: 125px auto 0 auto;
+        text-align: center;
+    }
+
+    .header-msg .btn {
+        margin: auto;
+        margin-top: 30px;
+    }
+}
+
+
 
 
 
@@ -269,6 +346,91 @@ header {
     color: #ffffff;
 }
 
+@media only screen and (max-width: 1025px) {
+    .services .services-ctn {
+        gap: 35px;
+    }
+    
+    .services .service {
+        width: 160px;
+    }
+
+    .services .service::before {
+        width: 85px;
+    }
+    .services .service:hover::before {
+        width: 145px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .services {
+        margin: 125px 8vw 0 8vw;
+    }
+
+    .services .services-ctn {
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: auto auto;
+        grid-template-rows: 1fr  1fr;
+        gap: 45px;
+        padding: 7px;
+    }
+    
+    .services .service {
+        position: relative;
+        width: 40vw;
+        height: 100px;
+        background: #002539;
+        border-radius: 7px;
+    }
+
+    .services .service::before {
+        width: 95px;
+        height: 20px;
+        border-top: 2px solid #FF5520;
+    }
+    
+    .services .service-two::before {
+        top: -7px;
+        right: -7px;
+        left: unset;
+        border-top-left-radius: unset;
+        border-top-right-radius: 5px;
+        border-left: unset;
+        border-bottom: unset;
+        border-right: 2px solid #FF5520;
+    }
+    
+    .services .service-three::before {
+        top: unset;
+        bottom: -7px;
+        left: -7px;
+        border-top-left-radius: unset;
+        border-bottom-right-radius: unset;
+        border-bottom-left-radius: 5px;
+        border-top: unset;
+        border-left: unset;
+        border-bottom: 2px solid #FF5520;
+        border-left: 2px solid #FF5520;
+        border-right: unset;
+    }
+    
+    .services .service-four::before {
+        top: unset;
+        right: -7px;
+        bottom: -7px;
+        left: unset;
+        border-top-left-radius: unset;
+        border-top-right-radius: unset;
+        border-bottom-right-radius: 5px;
+        border-left: unset;
+        border-top: unset;
+        border-right: 2px solid #FF5520;
+        border-bottom: 2px solid #FF5520;
+    }
+}
+
 
 
 
@@ -360,6 +522,54 @@ header {
 
 .work:nth-of-type(2n) .work-text {
     text-align: right;
+}
+
+@media only screen and (max-width: 900px) {
+    .works {
+        margin: 125px 8vw 0 8vw;
+    }
+    
+    .work {
+        width: 80vw;
+        align-self: center;
+    }
+    
+    .work:nth-of-type(2n) {
+        align-self: center;
+    }
+    
+    .work .work-imgs {
+        height: 60vw;
+    }
+    
+    .work .work-imgs .short-view {
+        left: 15px;
+        width: 50%;
+    }
+    
+    .work .work-imgs .long-view {
+        right: 15px;
+        height: 100%;
+    }
+    
+    .work.special .work-imgs .short-view {
+        left: 15px;
+        width: 45%;
+    }
+    
+    .work.special .work-imgs .long-view {
+        right: 15px;
+        height: calc(100% - 15px);
+    }
+    
+    .work .work-text {
+        margin-top: 25px;
+        text-align: center;
+    }
+    
+    .work:nth-of-type(2n) .work-text {
+        text-align: center;
+    }
 }
 
 

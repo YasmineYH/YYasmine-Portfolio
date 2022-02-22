@@ -431,6 +431,16 @@ header {
     }
 }
 
+@media only screen and (max-width: 600px)  {
+    .title {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: 90vw;
+        margin-bottom: 60px;
+    }
+}
+
 
 
 
@@ -700,6 +710,20 @@ header {
 
     .designer .profile-img {
         height: 350px;
+    }
+}
+
+@media only screen and (max-width: 800px)  {
+    .designer-ctn {
+        gap: 50px;
+        grid-template-columns: 1fr;
+    }
+
+    .designer .profile-img {
+        height: 250px;
+        background-image: url(images/profile.jpg);
+        background-size: cover;
+        background-position: 0 25%;
     }
 }
 

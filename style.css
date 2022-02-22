@@ -102,7 +102,25 @@ nav img {
 
 @media only screen and (max-width: 1010px) {
     nav ul {
-        display: none;
+        gap: 25px;
+        flex-direction: column;
+        position: absolute;
+        left: calc(8vw + 90px);
+        top: 85px;
+        z-index: 10000;
+        width: 250px;
+        border-radius: 5px;
+        padding: 25px 0;
+        background: #002539;
+        transition: .3s ease-out;
+        transform: scale(.001);
+        transform-origin: top;
+        opacity: 0;
+    }
+
+    nav ul li a {
+        color: #ffffff;
+        text-align: center;
     }
 
     .hamburger {
@@ -115,6 +133,11 @@ nav img {
         height: 2px;
         width: 27px;
         background: #002539;
+        transition: .3s ease-out;
+    }
+
+    .hamburger:hover .hamburger-line {
+        background: #FF5520;
     }
 
     .hamburger .hamburger-line:nth-of-type(1),
@@ -129,6 +152,13 @@ nav img {
         gap: unset;
         justify-content: space-between;
         margin: 30px 8vw 0 8vw;
+    }
+
+    nav ul {
+        top: 75px;
+        left: unset;
+        right: 8vw;
+        transform-origin: top right;
     }
 
     nav .line {
@@ -819,10 +849,97 @@ header {
 /*Skills Section*/
 .skills {
     margin-top: 250px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 150px;
 }
 
 .skills-title {
     margin-left: auto;
+    width: 90%;
+    text-align: right;
+}
+
+.skill .skill-title {
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.skill-ctn {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.skill-ctn .level {
+    position: relative;
+    width: 100%;
+    height: 4px;
+    border-radius: 100px;
+    background: #FF5520;
+}
+
+.skill-ctn .level::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    border-radius: 100px;
+    background: #002539;
+}
+
+@media only screen and (max-width: 900px)  {
+    .skills {
+        margin-top: 145px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        gap: 75px;
+    }
+    
+    .skills-title {
+        margin-right: auto;
+        width: 475px;
+        text-align: center;
+        order: -1;
+        margin-bottom: 25px;
+    }
+
+    .skill-ctn {
+        gap: 45px;
+    }
+}
+
+@media only screen and (max-width: 600px)  {
+    .skills {
+        gap: 60px;
+    }
+    
+    .skills-title {
+        width: 84vw;
+        margin-bottom: 5px;
+    }
+}
+
+
+
+
+/*Contact Section*/
+.contact {
+    margin-top: 250px;
+}
+
+.contact-title {
+    margin-left: auto;
     margin-right: auto;
     text-align: center;
+}
+
+@media only screen and (max-width: 900px) {
+    .contact {
+        margin-top: 145px;
+    }
 }

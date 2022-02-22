@@ -19,9 +19,9 @@
                 <img src="./images/logo-yasmine.svg" alt="Y. Yasmine">
                 <div class="line"></div>
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">My Works</a></li>
-                    <li><a href="">Book Me!</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#works">My Works</a></li>
+                    <li><a href="bookme.html">Book Me!</a></li>
                 </ul>
                 <div class="hamburger">
                     <div class="hamburger-line"></div>
@@ -74,7 +74,7 @@
         <div class="line"></div>
     </section>-->
 
-    <section class="works">
+    <section class="works" id="works">
         <div class="title works-title">
             <h2>My Works</h2>
             <p>I put my heart and my soul in every project I work on. Have fun exploring my babies!</p>
@@ -224,4 +224,23 @@
 </body>
 
 <script src="script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $("a").on('click', function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+
+                var hash = this.hash;
+
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function(){
+                    window.location.hash = hash;
+                });
+            }
+        });
+    });
+</script>
 </html>

@@ -7,6 +7,10 @@
     color: #002539;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 section {
     padding: 0 8vw;
 }
@@ -470,7 +474,8 @@ header {
 
 /*Works Section*/
 .works {
-    margin-top: 250px;
+    margin-top: 225px;
+    padding-top: 25px;
 }
 
 .works-ctn {
@@ -560,7 +565,7 @@ header {
 
 @media only screen and (max-width: 900px) {
     .works {
-        margin-top: 145px;
+        margin-top: 120px;
     }
     
     .work {

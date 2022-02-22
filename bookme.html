@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Corben:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="./images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Yasmine Portfolio | Book Me</title>
+</head>
+<body>
+    <header>
+        <div>
+            <nav>
+                <img src="./images/logo-yasmine.svg" alt="Y. Yasmine">
+                <div class="line"></div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#works">My Works</a></li>
+                    <li><a href="bookme.html">Book Me!</a></li>
+                </ul>
+                <div class="hamburger">
+                    <div class="hamburger-line"></div>
+                    <div class="hamburger-line"></div>
+                    <div class="hamburger-line"></div>
+                </div>
+            </nav>
+
+            <div class="header-msg">
+                <h1>I'm happy you decided to take our relationship to the next level!</h1>
+                <div class="btn">
+                    <button class="main-btn">Email Me</button>
+                    <div class="btn-border"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="designer">
+        <div class="title designer-title">
+            <h2>Again, Who Am I?</h2>
+            <p>It's such a pleasure to have you here! I'm Yessoufou Yasmine, a Web Designer living in Parakou, Republic of Benin.</p>
+        </div>
+
+        <div class="designer-ctn">
+            <div class="profile">
+                <div class="profile-img"></div>
+
+                <div class="profile-text">
+                    <h3>Yessoufou Yasmine</h3>
+                    <p>B.Sc. Computer Science</p>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="designer-text">
+                    <p>After my degree in Computer Science at the University of Ilorin, Nigeria in 2022, 
+                        I went on ahead to live my dream: work with actual people! I at last, had the opportunity to give actual value back to my society; 
+                        helping businesses and entrepreneurs find their place, as well as an audience, in the global community. The Internet.
+                    </p>
+                    <p>I love beauty. I love art. I love colors. I love logic. I love code. 
+                        But most importantly, I love listening to my clients and then translating who they are, 
+                        more so than what they do, into design.
+                    </p>
+                </div>
+
+                <div class="hobbies">
+                    <h3>My Hobbies</h3>
+
+                    <div class="hobbies-ctn">
+                        <div class="hobby">
+                            <img src="./images/reading.svg" alt="Reading">
+                            <h4>Reading</h4>
+                        </div>
+                        <div class="hobby">
+                            <img src="./images/dancing.svg" alt="Dancing">
+                            <h4>Dancing</h4>
+                        </div>
+                        <div class="hobby">
+                            <img src="./images/writing.svg" alt="Writing">
+                            <h4>Writing</h4>
+                        </div>
+                        <div class="hobby">
+                            <img src="./images/exercising.svg" alt="Exercising">
+                            <h4>Exercising</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script src="script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $("a").on('click', function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+
+                var hash = this.hash;
+                
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function(){
+                    window.location.hash = hash;
+                });
+            }
+        });
+    });
+</script>
+</html>

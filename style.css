@@ -7,13 +7,8 @@
     color: #002539;
 }
 
-body {
-    border: 2px solid red;
-}
-
 section {
     padding: 0 8vw;
-    border: 1px solid red;
 }
 
 h1 {
@@ -294,7 +289,7 @@ header {
 .services .services-ctn {
     display: flex;
     gap: 45px;
-    padding-left: 7px;
+    padding: 7px;
 }
 
 .services .service {
@@ -761,6 +756,51 @@ header {
         background-image: url(images/profile.jpg);
         background-size: cover;
         background-position: 0 25%;
+    }
+
+    .designer .profile-img:hover::before {
+        width: 250px;
+        height: 35px;
+    }
+    
+    .designer .profile-img:hover::after {
+        width: 250px;
+        height: 35px;
+    }
+}
+
+@media only screen and (max-width: 500px)  {
+    .designer .hobbies {
+        margin-top: 50px;
+    }
+    
+    .designer .hobbies h3 {
+        text-align: center;
+    }
+    
+    .designer .hobbies .hobbies-ctn {
+        width: 84vw;
+    }
+    
+    .designer .hobbies .hobbies-ctn .hobby {
+        gap: 10px;
+    }
+    
+    .designer .hobbies .hobbies-ctn .hobby img {
+        width: 20px;
+    }
+}
+
+@media only screen and (max-width: 350px)  {
+    .designer .hobbies .hobbies-ctn {
+        gap: 20px;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        margin-top: 25px;
+    }
+    
+    .designer .hobbies .hobbies-ctn .hobby {
+        gap: 20px;
     }
 }
 

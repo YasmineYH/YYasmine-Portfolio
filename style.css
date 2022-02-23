@@ -191,6 +191,10 @@ header {
     margin: 190px 0 0 8vw;
 }
 
+.other-pages-message {
+    margin: 120px 0 0 8vw;
+}
+
 .header-msg .btn {
     position: relative;
     width: 162px;
@@ -522,6 +526,7 @@ header {
 
 .work {
     width: 670px;
+    cursor: pointer;
 }
 
 .work:nth-of-type(2n) {
@@ -941,5 +946,63 @@ header {
 @media only screen and (max-width: 900px) {
     .contact {
         margin-top: 145px;
+    }
+}
+
+
+
+
+/*Work Page*/
+.work-hero {
+    margin-top: 75px;
+    padding: 0 8vw;
+}
+
+.work-hero img {
+    width: 100%;
+    background-image: url(images/healthic-hero.png);
+}
+
+.work-title {
+    text-align: center;
+}
+
+.about,
+.deliverables,
+.technologies {
+    margin-top: 200px;
+}
+
+.about-text {
+    display: flex;
+    gap: 45px;
+    text-align: justify;
+    line-height: 30px;
+}
+
+.small-hero {
+    display: none;
+}
+
+@media only screen and (max-width: 900px) {
+    .about,
+    .deliverables,
+    .technologies {
+        margin-top: 125px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .about-text {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .regular-hero {
+        display: none;
+    }
+
+    .small-hero {
+        display: block;
     }
 }

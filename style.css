@@ -170,6 +170,10 @@ nav img {
     nav {
         margin: 15px 8vw 0 8vw;
     }
+
+    nav ul {
+        top: 60px;
+    }
 }
 
 

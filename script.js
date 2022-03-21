@@ -122,7 +122,7 @@ window.addEventListener('load', function() {
         projectImageSmall.src = 'images/bicm-hero-2.png'
         
         visitBtn.addEventListener('click', function() {
-            window.open("https://www.figma.com/proto/Oa5UkSUbGHYYynXYgzihZO/BICM---Final?page-id=608%3A2641&node-id=608%3A2643&viewport=380%2C48%2C0.02&scaling=scale-down-width&starting-point-node-id=608%3A2643&show-proto-sidebar=1", "_blank")
+            window.open("https://yasmineyh.github.io/BICM", "_blank")
         })
     }
 })

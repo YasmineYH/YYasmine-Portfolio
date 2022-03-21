@@ -42,6 +42,29 @@ p {
     font-family: 'Corben';
 }
 
+@media only screen and (min-width: 1550px) {
+    h1 {
+        font-size: 50px;
+    }
+    
+    h2 {
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+    h4 {
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
 @media only screen and (max-width: 1000px) {
     h1 {
         font-size: 30px;
@@ -98,6 +121,31 @@ nav img {
 
 .hamburger {
     display: none;
+}
+
+@media only screen and (min-width: 1550px) {
+    nav {
+        gap: 75px;
+        height: 55px;
+        margin: 50px 0 0 8vw;
+    }
+
+    nav .line {
+        width: 3px;
+        height: 55px;
+    }
+    
+    nav ul {
+        gap: 75px;
+    }
+
+    nav ul li {
+        font-size: 22px;
+    }
+
+    nav img {
+        height: 65px;
+    }
 }
 
 @media only screen and (max-width: 1010px) {
@@ -241,6 +289,32 @@ header {
 
 .btn:hover .btn-border {
     border: 2px solid #FF5520;
+}
+
+@media only screen and (min-width: 1550px) {
+    .header-msg {
+        width: 650px;
+        margin: 275px 0 0 8vw;
+    }
+    
+    .other-pages-message {
+        margin: 175px 0 0 8vw;
+    }
+    
+    .main-btn {
+        top: 6px;
+        left: 6px;
+        transform: translateX(0%);
+        font-size: 20px;
+        width: 188px;
+        height: 43px;
+    }
+    
+    .btn-border {
+        width: 200px;
+        height: 44px;
+    }
+    
 }
 
 @media only screen and (max-width: 1000px) {
@@ -401,6 +475,33 @@ header {
     line-height: 25px;
     font-size: 15px;
     color: #ffffff;
+}
+
+@media only screen and (min-width: 1550px) {
+    .services {
+        margin-top: 150px;
+    }
+    
+    .title {
+        width: 575px;
+        margin-bottom: 75px;
+    }
+    
+    .services .services-ctn {
+        gap: 65px;
+    }
+    
+    .services .service {
+        width: 225px;
+        height: 125px;
+    }
+    
+    .services .service p {
+        bottom: 12px;
+        right: 17px;
+        line-height: 27px;
+        font-size: 18px;
+    }
 }
 
 @media only screen and (max-width: 1025px) {
@@ -600,6 +701,13 @@ header {
 
 .work:nth-of-type(2n) .work-text {
     text-align: right;
+}
+
+@media only screen and (min-width: 1550px) {
+    .works {
+        margin-top: 175px;
+        padding-top: 25px;
+    }
 }
 
 @media only screen and (max-width: 900px) {
